@@ -11,7 +11,6 @@ export const metadata: Metadata = {
   title: "Jack Architecture - Architecture Contemporaine",
   description:
     "Architecte spécialisé dans la conception d'espaces contemporains. Projets résidentiels et commerciaux sur mesure.",
-  generator: "v0.app",
 }
 
 export default function RootLayout({
