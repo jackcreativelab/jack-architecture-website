@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   title: "Jack Architecture - Architecture Contemporaine",
   description:
     "Architecte spécialisé dans la conception d'espaces contemporains. Projets résidentiels et commerciaux sur mesure.",
+  icons: {
+    icon: '/jack-architecture-website/architecte.png',
+  },
 }
 
 export default function RootLayout({
