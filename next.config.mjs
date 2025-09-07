@@ -1,5 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  basePath: '/jack-architecture-website',
+  assetPrefix: '/jack-architecture-website/',
   eslint: {
     ignoreDuringBuilds: true,
   },
