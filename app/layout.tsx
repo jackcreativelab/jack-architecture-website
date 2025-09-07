@@ -6,6 +6,7 @@ import { Analytics } from "@vercel/analytics/next"
 import { Suspense } from "react"
 import { ThemeProvider } from "@/components/theme-provider"
 import "./globals.css"
+import "./styles/custom-backgrounds.css"
 
 export const metadata: Metadata = {
   title: "Jack Architecture - Architecture Contemporaine",

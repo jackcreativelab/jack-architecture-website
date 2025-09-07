@@ -8,6 +8,7 @@ import Link from "next/link"
 import { ThemeToggle } from "@/components/theme-toggle"
 
 export default function HomePage() {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
   const [scrollY, setScrollY] = useState(0)
   const [isVisible, setIsVisible] = useState(false)
 
@@ -68,9 +69,8 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-1000 ease-out"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-1000 ease-out bg-hero-main"
           style={{
-            backgroundImage: `url('/modern-minimalist-architecture-house-with-clean-li.jpg')`,
             transform: `translateY(${scrollY * 0.5}px)`,
           }}
         >
@@ -169,10 +169,7 @@ export default function HomePage() {
             <Card className="overflow-hidden hover:shadow-2xl dark:hover:shadow-2xl dark:hover:shadow-slate-900/50 transition-all duration-500 transform hover:-translate-y-2 opacity-0 animate-fade-in-up intersection-observer group bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700">
               <div className="relative overflow-hidden">
                 <div
-                  className="h-64 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
-                  style={{
-                    backgroundImage: `url('/modern-residential-house-with-large-windows-and-mi.jpg')`,
-                  }}
+                  className="h-64 bg-cover bg-center transition-transform duration-700 group-hover:scale-110 bg-project-villa"
                 ></div>
                 <div className="absolute inset-0 bg-slate-900/0 group-hover:bg-slate-900/20 dark:group-hover:bg-slate-900/40 transition-all duration-300"></div>
               </div>
@@ -199,10 +196,7 @@ export default function HomePage() {
             <Card className="overflow-hidden hover:shadow-2xl dark:hover:shadow-2xl dark:hover:shadow-slate-900/50 transition-all duration-500 transform hover:-translate-y-2 opacity-0 animate-fade-in-up animation-delay-200 intersection-observer group bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700">
               <div className="relative overflow-hidden">
                 <div
-                  className="h-64 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
-                  style={{
-                    backgroundImage: `url('/modern-office-building-with-glass-facade-and-clean.jpg')`,
-                  }}
+                  className="h-64 bg-cover bg-center transition-transform duration-700 group-hover:scale-110 bg-project-bureaux"
                 ></div>
                 <div className="absolute inset-0 bg-slate-900/0 group-hover:bg-slate-900/20 dark:group-hover:bg-slate-900/40 transition-all duration-300"></div>
               </div>
@@ -251,10 +245,7 @@ export default function HomePage() {
               </Button>
             </div>
             <div
-              className="h-96 bg-cover bg-center rounded-lg opacity-0 animate-fade-in-up animation-delay-300 intersection-observer transform hover:scale-105 transition-all duration-500 shadow-lg hover:shadow-2xl dark:hover:shadow-2xl dark:hover:shadow-slate-900/50"
-              style={{
-                backgroundImage: `url('/professional-architect-portrait-in-modern-office-s.jpg')`,
-              }}
+              className="h-96 bg-cover bg-center rounded-lg opacity-0 animate-fade-in-up animation-delay-300 intersection-observer transform hover:scale-105 transition-all duration-500 shadow-lg hover:shadow-2xl dark:hover:shadow-2xl dark:hover:shadow-slate-900/50 bg-about-architect"
             ></div>
           </div>
         </div>

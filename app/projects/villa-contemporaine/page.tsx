@@ -8,6 +8,7 @@ import { useEffect, useState } from "react"
 import { ThemeToggle } from "@/components/theme-toggle"
 
 export default function VillaContemporaine() {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
   const [isVisible, setIsVisible] = useState(false)
 
   useEffect(() => {
@@ -84,10 +85,7 @@ export default function VillaContemporaine() {
       <section className="mb-16">
         <div className="container mx-auto px-6 max-w-6xl">
           <div
-            className="h-96 md:h-[600px] bg-cover bg-center rounded-2xl shadow-2xl dark:shadow-slate-700/50 transform hover:scale-[1.02] transition-all duration-700"
-            style={{
-              backgroundImage: `url('/modern-residential-house-with-large-windows-and-mi.jpg')`,
-            }}
+            className="h-96 md:h-[600px] bg-cover bg-center rounded-2xl shadow-2xl dark:shadow-slate-700/50 transform hover:scale-[1.02] transition-all duration-700 bg-project-villa"
           ></div>
         </div>
       </section>
@@ -146,7 +144,7 @@ export default function VillaContemporaine() {
                 key={i}
                 className="h-64 bg-slate-200 dark:bg-slate-700 rounded-lg hover:shadow-xl dark:hover:shadow-slate-700/50 transform hover:scale-105 transition-all duration-500"
                 style={{
-                  backgroundImage: `url('/modern-residential-house-with-large-windows-and-mi.jpg')`,
+                  backgroundImage: `url('/jack-architecture-website/modern-residential-house-with-large-windows-and-mi.jpg')`,
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
