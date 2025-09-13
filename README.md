@@ -1,2 +1,1 @@
-# Architecture website clone
-
+# Architecture website
